@@ -1,10 +1,4 @@
-/******* Bootstrap Theming ********/
-/*!
- * Bootstrap v4.5.3 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -49,18 +43,21 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+
+
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
 body {
+  direction: rtl;
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #6C757D;
-  text-align: left;
+  text-align: right;
   background-color: #F5F5F5;
 }
 
@@ -7372,7 +7369,10 @@ button.bg-dark:focus {
 .mt-2,
 .my-2 {
   margin-top: 0.5rem !important;
+  margin-right: 6.1rem;
 }
+
+
 
 .mr-2,
 .mx-2 {
@@ -7734,7 +7734,7 @@ button.bg-dark:focus {
   margin-top: auto !important;
 }
 
-.mr-auto,
+
 .mx-auto {
   margin-right: auto !important;
 }
@@ -7744,7 +7744,12 @@ button.bg-dark:focus {
   margin-bottom: auto !important;
 }
 
-.ml-auto,
+@media (max-width: 991px) {
+  .navbar-toggler {
+    order: -1;
+  }
+}
+
 .mx-auto {
   margin-left: auto !important;
 }
